@@ -2,12 +2,11 @@ public class TiposVariaveis {
 
     public static void main(String[] args) throws Exception {
 
-        //tipos primitivos
-        //estudar classe string que representem texto na aplicação
-
+        // tipos primitivos
+        // estudar classe string que representem texto na aplicação
 
         double minimumWage = 3000.33;
-        
+
         short numberShort = 1;
         int numberNormal = numberShort;
         short numeroShort2 = (short) numberNormal;

@@ -1,12 +1,12 @@
 public class TestaSwitch {
-    public static void main (String[] args){
+    public static void main(String[] args) {
         Metd2();
     }
 
-    private static void Metd1(){
+    private static void Metd1() {
         int opcao = 4;
-        
-        switch(opcao){
+
+        switch (opcao) {
             case 1:
                 System.out.println("OPÇÃO UM");
                 break;
@@ -16,16 +16,15 @@ public class TestaSwitch {
             case 3:
                 System.out.println("OPÇÃO TRES");
                 break;
-            default:
-                System.out.println("default.");
         }
     }
 
-    private static void Metd2(){
+    private static void Metd2() {
         int opcao = 1;
-        // só posso usar uma variavel como parametro se ela tiver como "final", devido ela ser imutavel
+        // só posso usar uma variavel como parametro se ela tiver como "final", devido
+        // ela ser imutavel
         final int variavel = 1;
-        switch(opcao){
+        switch (opcao) {
             case variavel:
                 System.out.println("OPÇÃO UM");
                 break;
@@ -35,6 +34,10 @@ public class TestaSwitch {
             case 3:
                 System.out.println("OPÇÃO TRES");
                 break;
+            // caso nenhuma dessas opções acima aconteça o default irá acontecer!
+            // caso não tenham opção default, caso nenhuma dessas opções acima aconteça, aparecerá um erro de Exeption
+            default:
+            System.out.println("default.");
         }
     }
 

@@ -1,21 +1,20 @@
 public class TesteArray {
-    
-    public static void main (String[] args){
-        
-        int[] idades = new int[]{0,2,4,6,8};
 
-       idades[4] = 10;
+    public static void main(String[] args) {
 
-        System.out.print(idades[4]);
+        int[] idades = new int[] { 0, 2, 4, 6, 8 };
 
-        for ( int i = 0; i < idades.length; i++ ){
-            System.out.print(idades[i]);
+        idades[4] = 10;
+
+        System.out.println(idades[4]);
+
+        for (int i = 0; i < idades.length; i++) {
+            System.out.println(idades[i]);
         }
 
-        for( int idade : idades ){
-            System.out.print( idade );
+        for (int idade : idades) {
+            System.out.println(idade);
         }
 
     }
-
 }
