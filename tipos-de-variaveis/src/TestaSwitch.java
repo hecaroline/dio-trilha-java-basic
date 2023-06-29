@@ -2,7 +2,7 @@ public class TestaSwitch {
     public static void main(String[] args) {
         Metd2();
     }
-
+    
     private static void Metd1() {
         int opcao = 4;
 

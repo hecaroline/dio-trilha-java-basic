@@ -11,9 +11,43 @@ public class TesteArray2 {
             System.out.println(c.nome);
         }
 
+        Cliente clientes2[] = new Cliente[5];
+        clientes2[0] = new Cliente();
+        clientes2[1] = new ClienteEspecial();
+
+        Cliente guilherme = new Cliente();
+        guilherme.nome = "Guilherme";
+
+        clientes2[0] = guilherme;
+
+        System.out.println(guilherme.nome);
+        System.out.println(clientes2[0].nome);
+
+        guilherme.nome = "Silveira";
+
+        System.out.println(guilherme.nome);
+        System.out.println(clientes2[0].nome);
+
+//        int[] valores = new int[10];
+        //long numeros[] = (long[])valores;
+
+        /*--------------------------------------------------------------------------------------------*/
+
+        String[] nomes = {"Mario", "Guilherme", "Rafael", "Lucas"};
+        Object[] objetos;
+
+        objetos = nomes;
+
+        for(Object o : objetos){
+            System.out.println(o);
+        }
+
+        System.out.println(objetos[2]);
     }
 }
 
 class Cliente {
     String nome;
 }
+
+class ClienteEspecial extends Cliente{}
